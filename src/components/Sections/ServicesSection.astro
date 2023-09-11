@@ -1,0 +1,25 @@
+
+---
+import CardService from "../Cards/CardService.astro";
+
+const data = [
+  { icon: "edit", title: "UI/UX Design", color: "#2D9CDB" },
+  { icon: "code", title: "Front End", color: "#27AE60" },
+  { icon: "List", title: "Back End", color: "#FF0000" }
+];
+
+---
+
+<section class="w-full max-w-6xl flex flex-col items-centermt-22 lg:mt-52  md:items-start">
+  <h3
+    class="w-3/4 max-w-sm text-2xl mt-2 text-[#333] font-semibold md:text-3xl md:mt-4 lg:text-4xl lg:leading-[50px]"
+  >
+    We offer high demand services
+  </h3>
+
+  <div class="mt-16 grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3">
+   
+    {data.map( item =>  <CardService title={item.title} color={item.color} icon={item.icon}/> )}
+
+  </div>
+</section>
