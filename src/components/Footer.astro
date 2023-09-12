@@ -1,0 +1,39 @@
+---
+import CardInput from "./Cards/CardInput.astro";
+const footerItems = [
+  { label: "Home", route: "#Home" },
+  { label: "Services", route: "#Services" },
+  { label: "Our Works", route: "#OurWorks" },
+  { label: "Clients", route: "#Clients" },
+  { label: "Contact", route: "#contact" },
+];
+---
+
+<footer id="contact" class="h-[685px] mt-24 flex flex-col items-center w-full bg-[#100E1D] md:h-[385px]">
+  <div class="h-11/12 w-10/12 max-w-6xl pl-2 mt-9 flex flex-col items-start md:flex-row md:items-start md:pl-0">
+    <section class="w-full ">
+      <ul class="flex flex-col gap-2">
+        {
+          footerItems.map((item) => (
+            <li class="text-white font-normal text-lg ">
+              <a href={item.route}>{item.label} </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+    <section class="mt-16 w-full  md:mt-0">
+        <h6 class="text-[#F2F2F2] text-4xl font-extrabold">Edie</h6>
+        <div class="flex gap-3 items-center mt-2">
+            <img class="w-6 h-6 hover:cursor-pointer" src="/SVGs/instagram.svg" alt="icono instagram">
+            <img class="w-6 h-6 hover:cursor-pointer" src="/SVGs/linkedin.svg" alt="icono linkedin">
+            <img  class="w-6 h-6 hover:cursor-pointer" src="/SVGs/twitter.svg" alt="icono twitter">
+        </div>
+    </section>
+    <section class="w-full flex items-center md:w-96 mt-16 md:mt-0">
+      <CardInput />
+    </section>
+  </div>
+  <p class="w-full text-center mt-20 text-[#818181] font-bold">created by Alex Rodriguez - devChallenges.io</p>
+
+</footer>

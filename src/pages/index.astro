@@ -3,14 +3,20 @@ import Layout from '../layouts/Layout.astro';
 import ServicesSection from '../components/Sections/ServicesSection.astro';
 import HeroSection from '../components/Sections/HeroSection.astro';
 import OurWorksSection from '../components/Sections/OurWorksSection.astro';
-
+import TeamSection from '../components/Sections/TeamSection.astro';
+import ClientsSection from '../components/Sections/ClientsSection.astro';
+import Footer from '../components/Footer.astro';
 ---
+
 
 <Layout title="Welcome to Astro.">
 	<main class="w-full flex flex-col items-center">
 		<HeroSection/>
 		<ServicesSection/>	
 		<OurWorksSection/>
+		<TeamSection/>
+		<ClientsSection/>
+		<Footer/>
 	</main>
 </Layout>
 

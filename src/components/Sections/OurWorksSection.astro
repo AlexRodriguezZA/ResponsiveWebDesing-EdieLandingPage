@@ -3,7 +3,8 @@ import CardProject from "../Cards/CardProject.astro";
 ---
 
 <section
-  class="w-full max-w-6xl flex flex-col items-center mt-24 lg:mt-20 md:items-start"
+  id="OurWorks"
+  class="w-full max-w-6xl flex flex-col items-center mt-24 lg:mt-[194px] md:items-start"
 >
   <h3
     class="w-3/4 max-w-md text-2xl mt-2 text-[#333] font-semibold md:text-3xl md:mt-4 lg:text-4xl lg:leading-[50px]"
@@ -12,16 +13,16 @@ import CardProject from "../Cards/CardProject.astro";
   </h3>
 
   <div
-    class="w-full mt-16 grid grid-cols-1 place-items-center md:grid-cols-2 "
+    class="w-full mt-16 grid grid-cols-1 place-items-center md:grid-rows-3 justify-center md:grid-cols-2 "
   >
-    <article class="w-11/12  max-w-[545px] mb-10">
+    <article class="w-11/12  max-w-[545px] mb-10 col-start-1 row-span-2 ">
       <div class="w-full">
         <img src="/Images/smarthome.jpg" class="rounded-xl" alt="" />
       </div>
-      <p class="text-[#828282] text-xs font-light mt-3 md:text-sm">
+      <p class="text-[#828282] text-xs font-light mt-3 md:text-sm md:mt-5">
         Full stack application
       </p>
-      <p class="text-[#333] font-medium text-lg md:text-2xl">
+      <p class="text-[#333] font-medium text-lg md:text-2xl md:mt-3">
         Smart home dashboard
       </p>
     </article>
@@ -30,21 +31,21 @@ import CardProject from "../Cards/CardProject.astro";
       <div class="w-full">
         <img src="/Images/onboard.png" class="rounded-xl" alt="" />
       </div>
-      <p class="text-[#828282] text-xs font-light mt-3 md:text-sm">
+      <p class="text-[#828282] text-xs font-light mt-3 md:text-sm md:mt-5">
         UX/UI design
       </p>
-      <p class="text-[#333] font-medium text-lg md:text-2xl">
+      <p class="text-[#333] font-medium text-lg md:text-2xl md:mt-3">
         Onboard application
       </p>
     </article>
-    <article class="w-11/12  max-w-[545px] mb-10">
+    <article class="w-11/12 max-w-[545px] mb-10 col-start-1 row-span-3">
       <div class="w-full">
         <img src="/Images/booking.png" class="rounded-xl" alt="" />
       </div>
-      <p class="text-[#828282] text-xs font-light mt-3 md:text-sm">
+      <p class="text-[#828282] text-xs font-light mt-3 md:text-sm md:mt-5" >
         Mobile application
       </p>
-      <p class="text-[#333] font-medium text-lg md:text-2xl">
+      <p class="text-[#333] font-medium text-lg md:text-2xl md:mt-3">
         Booking system
       </p>
     </article>
@@ -52,10 +53,10 @@ import CardProject from "../Cards/CardProject.astro";
       <div class="w-full">
         <img src="/Images/juice-product.png" class="rounded-xl" alt="" />
       </div>
-      <p class="text-[#828282] text-xs font-light mt-3 md:text-sm">
+      <p class="text-[#828282] text-xs font-light mt-3 md:text-sm md:mt-5">
         Front End applicati on
       </p>
-      <p class="text-[#333] font-medium text-lg md:text-2xl">
+      <p class="text-[#333] font-medium text-lg md:text-2xl md:mt-3">
         Juice product homepage
       </p>
     </article>
