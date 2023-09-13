@@ -1,8 +1,9 @@
 
 ---
-import Nav from "./Nav.astro";
+import Nav from "./Nav.jsx"
+
 ---
 
-<header class="flex flex-col w-full items-center">
-    <Nav/>
+<header class="flex flex-col w-full h-16 items-center bg-white fixed">
+    <Nav client:load/>
 </header>

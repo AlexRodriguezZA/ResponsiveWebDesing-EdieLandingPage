@@ -1,10 +1,10 @@
 ---
-import CardService from "../Cards/CardService.astro";
+import CardService from "../Cards/CardService.jsx";
 
 const services = [
-  { title: "UI/UX Design", color: "#2D9CDB", icon: "edit" },
-  { title: "Front End", color: "#27AE60", icon: "code" },
-  { title: "Back End", color: "#FF0000", icon: "List" }
+  { title: "UI/UX Design", color: "bg-[#2D9CDB]", icon: "edit" },
+  { title: "Front End", color: "bg-[#27AE60]", icon: "code" },
+  { title: "Back End", color: "bg-[#EB5757]", icon: "List" }
 ];
 
 ---
@@ -17,8 +17,8 @@ const services = [
   </h3>
 
   <div class="mt-16 grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3">
-    <CardService title={services[0].title} color={services[0].color} icon={services[0].icon} />
-    <CardService title={services[1].title} color={services[1].color} icon={services[1].icon} />
-    <CardService title={services[2].title} color={services[2].color} icon={services[2].icon} />
+    <CardService title={services[0].title} color={services[0].color} icon={services[0].icon} client:load />
+    <CardService title={services[1].title} color={services[1].color} icon={services[1].icon} client:load/>
+    <CardService title={services[2].title} color={services[2].color} icon={services[2].icon} client:load/>
   </div>
 </section>
