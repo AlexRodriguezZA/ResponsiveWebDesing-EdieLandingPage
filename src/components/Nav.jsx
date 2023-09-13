@@ -40,7 +40,7 @@ const Navbar = () => {
         <ul
           className={`${
             isMobileMenuOpen ? "md:block" : "hidden md:flex"
-          } flex-col gap-7 md:flex-row md:items-center absolute md:static top-16 w-full flex justify-center items-center left-0 md:top-0 md:left-auto bg-white md:bg-transparent`}
+          } flex-col gap-10 md:flex-row md:items-center absolute md:static top-16 w-full flex justify-center items-center left-0 md:top-0 md:left-auto bg-white md:bg-transparent`}
         >
           {navItems.map((item) => (
             <li
